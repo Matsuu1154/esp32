@@ -1,0 +1,6 @@
+# このコメントは無視
+console no : 1
+
+# このコメントも無視
+# console no : 2
+# console no : 3
