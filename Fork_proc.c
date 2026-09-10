@@ -20,7 +20,7 @@ int find_aprocess_pid() {
         if (!isdigit(entry->d_name[0])) continue;
 
         char path[256];
-        snprintf(path, sizeof(path), "/proc/%s/cmdline", entry->d_name);
+        snprintf(path, sizeof(path), "/proc/%s/comm", entry->d_name);
 
         FILE *fp = fopen(path, "r");
         if (!fp) continue;
